@@ -6,6 +6,15 @@ export default defineType({
   title: 'Deep Dive (Company)',
   type: 'document',
   fields: [
+    // --- NEW FIELD ADDED HERE ---
+    defineField({
+      name: 'isFree',
+      title: 'Make this Deep Dive FREE?',
+      type: 'boolean',
+      description: 'Set this to ON to make this article visible to non-subscribers.',
+      initialValue: false,
+    }),
+    // ----------------------------
     defineField({
       name: 'title',
       title: 'Title (Company Name)',
